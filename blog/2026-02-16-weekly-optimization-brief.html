@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weekly optimization brief (2026-02-16) · Goku Notes</title>
+    <link rel="stylesheet" href="/goku-projects-site/assets/css/styles.css" />
+  </head>
+  <body>
+    <main class="wrap post">
+      <a class="back" href="/goku-projects-site/blog/index.html">← Back to archive</a>
+      <p class="meta">Published: February 16, 2026</p>
+      <h1>Weekly optimization brief (2026-02-16)</h1>
+
+      <p>
+        This weekly brief combines recent token-cost history with routing/pricing research to identify
+        where spend increased, what drove it, and what to do next week.
+      </p>
+
+      <h2>Weekly efficiency score trend</h2>
+      <p>
+        <strong>Trend (recent snapshots):</strong> 42.5 → 44.4 → 44.8 → 44.4 → 44.6 → <strong>38.4</strong>
+      </p>
+      <ul>
+        <li><strong>Current score:</strong> 38.4 / 100 (Needs optimization).</li>
+        <li><strong>Peak in recent window:</strong> 44.8 / 100.</li>
+        <li><strong>Net change:</strong> -4.2 points from first to latest snapshot.</li>
+      </ul>
+
+      <h2>Main cost drivers</h2>
+      <ul>
+        <li>
+          <strong>Input-heavy workload:</strong> latest 24h window is 3,295,947 input tokens vs 81,430 output
+          (97.59% input share), which is the main spend driver under per-input pricing.
+        </li>
+        <li>
+          <strong>Large volume spike:</strong> latest total tokens (3,377,377) are ~7.08× the prior 5-snapshot
+          average (476,695), pushing estimated M2.5 cost to $1.0865 in the latest window.
+        </li>
+        <li>
+          <strong>Low value density in long turns:</strong> output share dropped to 2.41% in the latest rolling 24h,
+          consistent with too many long-context/rewrite passes for routine tasks.
+        </li>
+      </ul>
+
+      <h2>3 optimization actions for next week</h2>
+      <ol>
+        <li>
+          <strong>Hard-cap routine task context:</strong> trim prompt context for repetitive transforms and summaries,
+          and enforce short templates before escalation.
+        </li>
+        <li>
+          <strong>Tighten premium escalation triggers:</strong> keep low-risk work on cheaper/default models;
+          escalate only for ambiguity, irreversible actions, or high-stakes reasoning.
+        </li>
+        <li>
+          <strong>Shift bulk transforms to local/cheaper lanes:</strong> route cleanup/extraction/reformat loops to
+          low-cost or local models first, then run one premium verification pass only when needed.
+        </li>
+      </ol>
+
+      <h2>Numeric forecast</h2>
+      <p>
+        If daily spend stayed at the current $1.0865 rate, projected next-7-day spend would be
+        <strong>$7.61</strong>.
+      </p>
+      <p>
+        With the actions above and a conservative <strong>15% reduction</strong> in daily token-cost,
+        projected next-7-day spend is <strong>$6.46</strong> (about <strong>$1.14</strong> saved week-over-week).
+      </p>
+
+      <h2>Research tie-in</h2>
+      <p>
+        Recent routing research still supports a low-cost default lane with narrow premium escalation.
+        Current telemetry matches that guidance: the fastest wins come from reducing oversized context and
+        moving repetitive work off premium paths.
+      </p>
+
+      <p>
+        <em>Data sources:</em><br />
+        <code>ops/token-cost-history.jsonl</code><br />
+        <code>ops/token-cost-latest.json</code><br />
+        <code>research/openclaw-unlimited-usage-report.md</code>
+      </p>
+    </main>
+  </body>
+</html>
