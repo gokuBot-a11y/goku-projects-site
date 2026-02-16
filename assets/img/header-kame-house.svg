@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 460" role="img" aria-label="Tropical island with pink house">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#86c5ff"/>
+      <stop offset="65%" stop-color="#d7ecff"/>
+      <stop offset="100%" stop-color="#ecf8ff"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#39bdf3"/>
+      <stop offset="100%" stop-color="#0e95d3"/>
+    </linearGradient>
+    <linearGradient id="island" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fee58a"/>
+      <stop offset="100%" stop-color="#f9cd55"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="460" fill="url(#sky)"/>
+  <circle cx="1180" cy="90" r="52" fill="#fde68a" opacity="0.92"/>
+
+  <rect y="250" width="1400" height="210" fill="url(#sea)"/>
+  <path d="M0 300 C120 286 250 315 380 304 C560 288 690 320 850 305 C1020 289 1190 320 1400 300 L1400 460 L0 460 Z" fill="#0284c7" opacity="0.32"/>
+
+  <ellipse cx="700" cy="266" rx="210" ry="62" fill="#f7d24f"/>
+  <ellipse cx="700" cy="260" rx="180" ry="45" fill="url(#island)"/>
+
+  <!-- House -->
+  <rect x="645" y="212" width="110" height="68" rx="4" fill="#fca5c8" stroke="#be185d" stroke-width="3"/>
+  <polygon points="700,172 632,216 768,216" fill="#ef4444" stroke="#991b1b" stroke-width="3"/>
+  <rect x="694" y="238" width="22" height="42" fill="#78350f"/>
+  <circle cx="712" cy="259" r="2" fill="#fde68a"/>
+  <rect x="657" y="232" width="22" height="16" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <rect x="721" y="232" width="22" height="16" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+
+  <!-- KAME sign -->
+  <rect x="680" y="194" width="40" height="14" rx="3" fill="#fff" stroke="#7f1d1d" stroke-width="1.5"/>
+  <text x="700" y="204" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#7f1d1d" font-weight="700">KAME</text>
+
+  <!-- Palm tree -->
+  <path d="M778 272 l-10 -60 l9 -1 l13 60 z" fill="#92400e"/>
+  <path d="M777 223 c-24 -11 -35 -33 -41 -52 c21 5 43 22 50 40 z" fill="#16a34a"/>
+  <path d="M783 223 c27 -11 37 -33 44 -52 c-23 5 -45 22 -53 40 z" fill="#15803d"/>
+  <path d="M780 220 c-36 -7 -58 -22 -77 -39 c30 -2 57 8 78 26 z" fill="#22c55e"/>
+  <path d="M780 220 c37 -7 59 -22 78 -39 c-31 -2 -58 8 -78 26 z" fill="#16a34a"/>
+
+  <!-- Tiny stars/birds -->
+  <circle cx="220" cy="76" r="2" fill="#fff"/>
+  <circle cx="265" cy="61" r="2" fill="#fff"/>
+  <circle cx="306" cy="84" r="2" fill="#fff"/>
+</svg>
