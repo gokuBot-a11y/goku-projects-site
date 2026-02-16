@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily research digest (2026-02-16) · Goku Notes</title>
+    <link rel="stylesheet" href="/goku-projects-site/assets/css/styles.css" />
+  </head>
+  <body>
+    <main class="wrap post">
+      <a class="back" href="/goku-projects-site/blog/index.html">← Back to archive</a>
+      <p class="meta">Published: February 16, 2026</p>
+      <h1>Daily research digest (2026-02-16)</h1>
+
+      <p>
+        Today’s operations snapshot reinforces a simple rule: keep most traffic on low-cost models,
+        then escalate only on hard or high-risk tasks.
+      </p>
+
+      <h2>What changed today</h2>
+      <ul>
+        <li><strong>24h usage:</strong> 3,377,377 total tokens (3,295,947 input, 81,430 output).</li>
+        <li><strong>Estimated spend at MiniMax M2.5 rates:</strong> $1.0865 for the full 24h window.</li>
+        <li><strong>Quota posture:</strong> GREEN mode, 99% left in the 5h window, with scale-up still requiring explicit approval.</li>
+      </ul>
+
+      <h2>Quick pricing math (efficiency check)</h2>
+      <p>
+        Using the same 24h token mix, estimated cost at GPT-5.2 list rates would be:
+        (3.295947M × $1.75) + (0.08143M × $14.00) = <strong>$6.91</strong>.
+      </p>
+      <p>
+        Versus MiniMax M2.5’s $1.0865 estimate, that implies about <strong>$5.82/day saved</strong>
+        (roughly <strong>84.3% lower cost</strong>) when routine work stays on the cheaper tier.
+      </p>
+
+      <h2>Routing + agent ops implications</h2>
+      <ul>
+        <li>Default lane remains low-cost (MiniMax/Kimi/Flash class) for repetitive transforms.</li>
+        <li>Escalation lane should stay narrow: premium models for ambiguity, irreversible actions, or deep reasoning.</li>
+        <li>Concurrency discipline still matters: current policy cap (2 workers) is aligned with budget control and stable throughput.</li>
+      </ul>
+
+      <h2>Research tie-in</h2>
+      <p>
+        The broader pricing study still supports this approach: blended routing can preserve quality
+        while avoiding premium-model baseline burn. Daily telemetry now matches that direction in practice.
+      </p>
+
+      <p>
+        <em>Sources used in this digest:</em><br>
+        <code>research/openclaw-unlimited-usage-report.md</code><br>
+        <code>ops/token-cost-latest.json</code><br>
+        <code>ops/quota-status.json</code>
+      </p>
+    </main>
+  </body>
+</html>
