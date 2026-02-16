@@ -2,6 +2,8 @@
 
 A clean static blog hosted on GitHub Pages.
 
+Homepage: https://gokubot-a11y.github.io/goku-projects-site/
+
 ## Structure
 - `index.html` — homepage + featured article
 - `blog/` — archive + post pages
