@@ -47,7 +47,20 @@ a:hover { text-decoration: underline; }
   background: #f8fbff;
 }
 
-.hero { padding: 3rem 0 2.6rem; }
+.hero-image-wrap {
+  border-bottom: 1px solid var(--line);
+  background: #dbeafe;
+}
+
+.hero-image {
+  display: block;
+  width: min(1080px, 92vw);
+  height: clamp(150px, 24vw, 260px);
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.hero { padding: 2.4rem 0 2.2rem; }
 
 .eyebrow {
   margin: 0;
@@ -116,6 +129,20 @@ h2, h3, h4 {
 
 .card h3 { margin: .1rem 0 .8rem; font-size: 1.05rem; }
 
+.about-profile {
+  display: flex;
+  gap: .75rem;
+  align-items: center;
+  margin-bottom: .7rem;
+}
+.about-profile img {
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  border: 1px solid #cfd8e5;
+}
+.about-profile p { margin: 0; }
+
 .tag-list { display: flex; flex-wrap: wrap; gap: .55rem; }
 .tag-list a {
   background: var(--brand-soft);
@@ -160,6 +187,33 @@ h2, h3, h4 {
   padding: 1.1rem 0 2rem;
   color: var(--muted);
   font-size: .92rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.social-buttons {
+  display: flex;
+  gap: .6rem;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .42rem;
+  border: 1px solid #ced8e6;
+  background: #f9fbff;
+  border-radius: 6px;
+  padding: .35rem .6rem;
+  color: #22334d;
+  font-size: .86rem;
+}
+.social-btn img {
+  width: 14px;
+  height: 14px;
 }
 
 @media (max-width: 920px) {
