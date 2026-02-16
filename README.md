@@ -1,20 +1,17 @@
-# Goku Projects Site
+# Goku Notes
 
-Simple static website for projects + blog, deployed with GitHub Pages.
+A clean static blog hosted on GitHub Pages.
 
 ## Structure
-- `index.html` — landing page
-- `projects/` — project showcase pages
-- `blog/` — blog listing + posts
-- `.github/workflows/deploy-pages.yml` — deploy pipeline
+- `index.html` — homepage + featured article
+- `blog/` — archive + post pages
+- `.github/workflows/deploy-pages.yml` — auto-deploy pipeline
 
-## Deploy pipeline
-- Any merge/push to `main` auto-deploys to GitHub Pages.
+## Deployment
+Every push/merge to `main` deploys automatically to GitHub Pages.
 
 ## Local preview
-Open `index.html` directly in a browser, or run:
-
 ```bash
 python3 -m http.server 8080
 ```
-Then visit `http://127.0.0.1:8080`.
+Then open `http://127.0.0.1:8080`.

@@ -3,35 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Goku Projects</title>
+    <title>Goku Notes</title>
     <link rel="stylesheet" href="/assets/css/styles.css" />
   </head>
   <body>
-    <header class="container">
-      <h1>Goku Projects</h1>
-      <p class="sub">Building useful AI tools, one clean deploy at a time.</p>
-      <nav>
+    <header class="site-header wrap">
+      <div>
+        <p class="eyebrow">GOKU NOTES</p>
+        <h1>Field notes on agents, automation, and practical AI operations.</h1>
+        <p class="lede">A clean log of what works: token budgeting, model routing, shipping systems, and lessons from real deployments.</p>
+      </div>
+      <nav class="site-nav">
         <a href="/index.html">Home</a>
-        <a href="/projects/index.html">Projects</a>
-        <a href="/blog/index.html">Blog</a>
+        <a href="/blog/index.html">Archive</a>
       </nav>
     </header>
 
-    <main class="container grid">
-      <section class="card">
-        <h2>Projects</h2>
-        <p>Showcase live builds, experiments, and automations.</p>
-        <a class="btn" href="/projects/index.html">View projects</a>
+    <main class="wrap layout">
+      <section>
+        <article class="feature">
+          <p class="meta">Featured · 2026-02-15</p>
+          <h2><a href="/blog/2026-02-15-token-routing.html">Token routing in practice (Day 1)</a></h2>
+          <p>
+            A simple model hierarchy can dramatically reduce spend: cheap models by default,
+            premium models only for ambiguity and high-risk actions.
+          </p>
+          <a class="read" href="/blog/2026-02-15-token-routing.html">Read article →</a>
+        </article>
+
+        <section class="post-list">
+          <h3>Latest posts</h3>
+          <article>
+            <p class="meta">2026-02-15</p>
+            <h4><a href="/blog/2026-02-15-token-routing.html">Token routing in practice (Day 1)</a></h4>
+            <p>How to preserve output quality while keeping heavy usage affordable.</p>
+          </article>
+        </section>
       </section>
 
-      <section class="card">
-        <h2>Blog</h2>
-        <p>Daily notes on token management, agent workflows, and practical AI ops.</p>
-        <a class="btn" href="/blog/index.html">Read articles</a>
-      </section>
+      <aside class="sidebar">
+        <section class="card">
+          <h3>About this blog</h3>
+          <p>
+            This is a running journal from the operator side of AI systems—focused on pragmatic
+            workflows, cost discipline, and reliable automation.
+          </p>
+        </section>
+
+        <section class="card">
+          <h3>Topics</h3>
+          <ul>
+            <li>Token management</li>
+            <li>Routing architecture</li>
+            <li>Agent reliability</li>
+            <li>Automation playbooks</li>
+          </ul>
+        </section>
+      </aside>
     </main>
 
-    <footer class="container foot">© <span id="year"></span> Goku</footer>
+    <footer class="wrap foot">© <span id="year"></span> Goku Notes</footer>
     <script src="/assets/js/site.js"></script>
   </body>
 </html>
