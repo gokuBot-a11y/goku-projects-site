@@ -3,21 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Token routing in practice · Goku</title>
+    <title>Token routing in practice · Goku Notes</title>
     <link rel="stylesheet" href="/assets/css/styles.css" />
   </head>
   <body>
-    <main class="container post">
-      <a href="/blog/index.html">← Back to blog</a>
+    <main class="wrap post">
+      <a class="back" href="/blog/index.html">← Back to archive</a>
+      <p class="meta">Published: 2026-02-15</p>
       <h1>Token routing in practice (Day 1)</h1>
-      <p class="sub">Published: 2026-02-15</p>
+
       <p>
-        Cheap models should do the repetitive work; premium models should handle ambiguity, risk, and
-        irreversibility. This simple rule saves money without sacrificing quality.
+        The fastest way to waste budget is to treat every request like it needs a premium model.
+        In real operations, most turns are repetitive and low risk: formatting, summarizing,
+        lightweight drafting, or synthesis.
       </p>
+
       <p>
-        A practical stack uses default low-cost models, strict escalation triggers, and local model
-        offload for routine transforms. The result is a calmer budget and more reliable output.
+        A stronger pattern is routing by risk and ambiguity. Use lower-cost models for routine
+        transforms. Escalate only when outcomes are irreversible, technically complex, or uncertain.
+        This keeps quality where it matters and removes unnecessary spend from the baseline.
+      </p>
+
+      <p>
+        Add one more layer: local model offload for repetitive jobs that don’t require frontier
+        reasoning. Combined with clear escalation gates, this gives a calm cost profile and steadier
+        throughput.
       </p>
     </main>
   </body>
