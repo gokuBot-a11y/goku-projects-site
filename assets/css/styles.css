@@ -81,11 +81,7 @@ a:hover { text-decoration: underline; }
   letter-spacing: .08em;
 }
 
-.home-label {
-  margin-top: 7rem !important;
-  font-size: clamp(1rem, 2vw, 1.45rem) !important;
-  font-weight: 500;
-}
+
 
 .hero-text-below {
   text-align: center;
@@ -246,7 +242,6 @@ a:hover { text-decoration: underline; }
 @media (max-width: 700px) {
   .hero-shell { min-height: 360px; }
   .hero-center { min-height: 320px; padding-top: 1.7rem; }
-  .home-label { margin-top: 5.3rem !important; }
   .hero-bot { width: 92px; right: 10px; bottom: 20px; }
   .site-nav { gap: .75rem; font-size: .8rem; }
   .about-image { width: 130px; }
