@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-label="Retro robot with spiky hair">
+  <defs>
+    <linearGradient id="hair" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <!-- Hair -->
+  <path d="M110 18 L94 56 L112 44 L124 60 L132 40 L150 54 L144 32 L166 42 L158 22 L138 28 L126 10 Z" fill="url(#hair)" stroke="#b45309" stroke-width="3"/>
+  <!-- Body -->
+  <rect x="74" y="130" width="72" height="62" rx="12" fill="#1f2937"/>
+  <rect x="86" y="146" width="48" height="14" rx="6" fill="#64748b"/>
+  <!-- Head -->
+  <rect x="52" y="58" width="116" height="86" rx="14" fill="#334155" stroke="#0f172a" stroke-width="4"/>
+  <rect x="64" y="70" width="92" height="62" rx="9" fill="#0f766e"/>
+  <!-- Face -->
+  <circle cx="94" cy="100" r="9" fill="#022c22"/>
+  <circle cx="126" cy="100" r="9" fill="#022c22"/>
+  <circle cx="94" cy="100" r="4" fill="#a3e635"/>
+  <circle cx="126" cy="100" r="4" fill="#a3e635"/>
+  <rect x="95" y="116" width="30" height="5" rx="2.5" fill="#84cc16"/>
+  <!-- Ears -->
+  <rect x="36" y="84" width="14" height="28" rx="6" fill="#475569"/>
+  <rect x="170" y="84" width="14" height="28" rx="6" fill="#475569"/>
+</svg>
