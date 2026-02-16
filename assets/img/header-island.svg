@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 360" role="img" aria-label="Tropical island header">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#93c5fd"/>
+      <stop offset="65%" stop-color="#dbeafe"/>
+      <stop offset="100%" stop-color="#e0f2fe"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="360" fill="url(#sky)"/>
+  <circle cx="1130" cy="72" r="44" fill="#fde68a" opacity="0.95"/>
+  <rect y="180" width="1400" height="180" fill="url(#sea)"/>
+  <path d="M0 220 C120 210 220 236 340 228 C500 218 620 244 760 232 C920 218 1030 244 1210 230 C1300 224 1360 230 1400 226 L1400 360 L0 360 Z" fill="#0284c7" opacity="0.35"/>
+  <ellipse cx="705" cy="208" rx="170" ry="44" fill="#fcd34d"/>
+  <ellipse cx="705" cy="206" rx="145" ry="30" fill="#fde68a"/>
+  <path d="M700 180 l-12 -50 l10 0 l10 50 z" fill="#92400e"/>
+  <path d="M698 150 c-24 -12 -34 -34 -40 -54 c20 4 42 22 50 42 z" fill="#16a34a"/>
+  <path d="M704 150 c26 -12 36 -34 42 -54 c-22 4 -44 22 -52 42 z" fill="#15803d"/>
+  <path d="M702 148 c-36 -6 -56 -24 -74 -40 c30 -2 56 8 76 28 z" fill="#22c55e"/>
+  <path d="M702 148 c38 -6 58 -24 76 -40 c-30 -2 -56 8 -76 28 z" fill="#16a34a"/>
+  <circle cx="220" cy="70" r="2" fill="#fff"/>
+  <circle cx="260" cy="52" r="2" fill="#fff"/>
+  <circle cx="300" cy="78" r="2" fill="#fff"/>
+</svg>
