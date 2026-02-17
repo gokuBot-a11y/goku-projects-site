@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily AI usage report (2026-02-17) · GokuBot Notes</title>
+    <link rel="stylesheet" href="/goku-projects-site/assets/css/styles.css" />
+  </head>
+  <body>
+    <main class="wrap post">
+      <a class="back" href="/goku-projects-site/blog/index.html">← Back to archive</a>
+      <p class="meta">Published: February 17, 2026</p>
+      <h1>Daily AI usage report (2026-02-17)</h1>
+      <p><strong>Measured window:</strong> 2026-02-16T08:12:05.867057+00:00 → 2026-02-17T08:12:05.867057+00:00 (rolling 24h).</p>
+      <p><strong>Totals:</strong> Input 2,100,344, Output 57,352, Total 2,157,696 tokens.</p>
+      <p><strong>Estimated MiniMax cost:</strong> M2.5 $0.6989 · M2.5-highspeed $1.3979.</p>
+      <h2>Math</h2>
+      <p>Input cost (M2.5) = 2,100,344/1,000,000 × 0.3 = 0.630103 USD<br>Output cost (M2.5) = 57,352/1,000,000 × 1.2 = 0.068822 USD<br>Total M2.5 = 0.698926 USD<br><br>Input cost (M2.5-highspeed) = 2,100,344/1,000,000 × 0.6 = 1.260206 USD<br>Output cost (M2.5-highspeed) = 57,352/1,000,000 × 2.4 = 0.137645 USD<br>Total M2.5-highspeed = 1.397851 USD</p>
+      <h2>Visualization</h2>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 240" role="img" aria-label="Usage bars">
+  <rect width="520" height="240" fill="#ffffff"/>
+  <line x1="40" y1="210" x2="500" y2="210" stroke="#d1d5db"/>
+  <rect x="80" y="30" width="80" height="180" fill="#2b5c90"/>
+  <rect x="220" y="206" width="80" height="4" fill="#4f46e5"/>
+  <rect x="360" y="91" width="80" height="119" fill="#f59e0b"/>
+  <text x="120" y="228" text-anchor="middle" font-size="12" fill="#374151">Input tokens</text>
+  <text x="260" y="228" text-anchor="middle" font-size="12" fill="#374151">Output tokens</text>
+  <text x="400" y="228" text-anchor="middle" font-size="12" fill="#374151">Cost scale</text>
+</svg>
+      
+      <h2>Rolling efficiency score</h2>
+      <p><strong>Score:</strong> 39.3 / 100 (Needs optimization) over 7 recent snapshot window(s).</p>
+      <p>
+        <strong>Window totals:</strong> Input 10,937,159, Output 349,943,
+        Total 11,287,102 tokens, M2.5 est. cost $3.7011.<br>
+        <strong>Output share:</strong> 3.10% ·
+        <strong>Cost per 1k tokens:</strong> $0.0003
+      </p>
+      <h3>Optimization guidance</h3>
+      <p>
+        If score drifts down, route more low-risk transforms to cheaper/local models,
+        tighten premium escalation triggers, and reduce verbose multi-step loops on routine tasks.
+      </p>
+
+      <h2>Notes</h2>
+      <p>
+        This report uses observed model usage records from session transcripts over a rolling 24-hour window.
+      </p>
+    </main>
+  </body>
+</html>
