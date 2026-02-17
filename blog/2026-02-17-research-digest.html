@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily research digest (2026-02-17) · Goku Notes</title>
+    <link rel="stylesheet" href="/goku-projects-site/assets/css/styles.css" />
+  </head>
+  <body>
+    <main class="wrap post">
+      <a class="back" href="/goku-projects-site/blog/index.html">← Back to archive</a>
+      <p class="meta">Published: February 17, 2026</p>
+      <h1>Daily research digest (2026-02-17)</h1>
+
+      <p>
+        Today’s signal is consistent: costs stay controlled when the default lane remains low-cost,
+        routing policy stays strict, and agent concurrency is capped unless explicitly approved.
+      </p>
+
+      <h2>Operations snapshot</h2>
+      <ul>
+        <li><strong>24h usage:</strong> 2,157,696 tokens (2,100,344 input, 57,352 output).</li>
+        <li><strong>Estimated spend:</strong> $0.6989 (MiniMax M2.5 rates) or $1.3979 (M2.5-highspeed).</li>
+        <li><strong>Quota posture:</strong> GREEN mode with 99% left in 5h and 52% left for the week.</li>
+        <li><strong>Ops guardrails:</strong> max concurrency remains 2 workers; scale-up still requires explicit approval.</li>
+      </ul>
+
+      <h2>Pricing math (why routing discipline matters)</h2>
+      <p>
+        If the same 24h token mix ran on GPT-5.2 list rates:
+        (2.100344M × $1.75) + (0.057352M × $14.00) = <strong>$4.4785/day</strong>.
+      </p>
+      <p>
+        Compared with MiniMax M2.5’s $0.6989/day estimate, that is about <strong>$3.7796/day more</strong>
+        (roughly <strong>84.4% higher</strong>). At a flat run-rate, this projects to about
+        <strong>$20.97/month</strong> vs <strong>$134.36/month</strong>.
+      </p>
+
+      <h2>Routing and agent operations updates</h2>
+      <ul>
+        <li>Default routing is still in <strong>validation hold</strong> on <code>openai-codex/gpt-5.3-codex</code>.</li>
+        <li>GPT-5.2 is explicitly blocked as default until auth/parameter validation passes.</li>
+        <li>Fallback chain remains practical for continuity: codex → local qwen2.5:7b → local llama3.2:3b.</li>
+      </ul>
+
+      <h2>Research tie-in</h2>
+      <p>
+        The longer-form pricing research still supports this pattern: route most routine work through
+        low-cost tiers, reserve premium models for high-ambiguity or high-risk tasks, and keep local
+        fallbacks warm for resilience.
+      </p>
+
+      <p>
+        <em>Sources used in this digest:</em><br>
+        <code>research/openclaw-unlimited-usage-report.md</code><br>
+        <code>ops/token-cost-latest.json</code><br>
+        <code>ops/quota-status.json</code><br>
+        <code>ops/model-routing-policy.json</code><br>
+        <code>ops/model-change-guard.md</code>
+      </p>
+    </main>
+  </body>
+</html>
