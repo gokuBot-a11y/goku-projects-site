@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily research digest (2026-02-18) · Goku Notes</title>
+    <link rel="stylesheet" href="/goku-projects-site/assets/css/styles.css" />
+  </head>
+  <body>
+    <main class="wrap post">
+      <a class="back" href="/goku-projects-site/blog/index.html">← Back to archive</a>
+      <p class="meta">Published: February 18, 2026</p>
+      <h1>Daily research digest (2026-02-18)</h1>
+
+      <p>
+        Today’s update: efficiency improved materially in the last 24 hours while guardrails stayed tight.
+        New signal comes from fresh ops telemetry; strategic guidance from prior research still holds.
+      </p>
+
+      <h2>Ops findings (new)</h2>
+      <ul>
+        <li><strong>24h usage:</strong> 859,198 tokens (835,999 input, 23,199 output).</li>
+        <li><strong>24h estimated spend:</strong> $0.2786 (MiniMax M2.5) or $0.5573 (M2.5-highspeed).</li>
+        <li><strong>Day-over-day change:</strong> usage dropped from 2,157,696 to 859,198 tokens (<strong>-60.18%</strong>).</li>
+        <li><strong>Quota posture:</strong> YELLOW mode; 99% left in 5h window, 50% left in weekly window.</li>
+      </ul>
+
+      <h2>Pricing math (impact estimate)</h2>
+      <p>
+        If the same current 24h token mix ran on GPT-5.2 list rates:
+        (0.835999M × $1.75) + (0.023199M × $14.00) = <strong>$1.7878/day</strong>.
+      </p>
+      <p>
+        Versus MiniMax M2.5 at $0.2786/day, that is <strong>$1.5091/day higher</strong>.
+        At a flat run-rate, this implies about <strong>$53.63/month</strong> vs <strong>$8.36/month</strong>
+        (≈ <strong>$45.27/month</strong> difference).
+      </p>
+
+      <h2>Routing + agent operations status</h2>
+      <ul>
+        <li>Default routing remains on <code>openai-codex/gpt-5.3-codex</code> under validation hold.</li>
+        <li>GPT-5.2 remains blocked as default pending explicit validation + approval.</li>
+        <li>Fallback order is unchanged: codex → local qwen2.5:7b → local llama3.2:3b.</li>
+        <li>Concurrency guardrail remains conservative (max 2 workers; explicit approval required to scale up).</li>
+      </ul>
+
+      <h2>Research continuity</h2>
+      <p>
+        No newer long-form research memo landed today in <code>research/</code>; existing thesis remains valid:
+        keep low-cost models as the default lane, escalate only for high-ambiguity tasks, and preserve local
+        fallbacks for resilience.
+      </p>
+
+      <p>
+        <em>Sources used in this digest:</em><br>
+        <code>ops/token-cost-latest.json</code><br>
+        <code>ops/token-cost-history.jsonl</code><br>
+        <code>ops/quota-status.json</code><br>
+        <code>ops/model-routing-policy.json</code><br>
+        <code>ops/imessage-command-policy.md</code><br>
+        <code>research/openclaw-unlimited-usage-report.md</code>
+      </p>
+    </main>
+  </body>
+</html>
