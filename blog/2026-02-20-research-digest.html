@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily research digest (2026-02-20) · Goku Notes</title>
+    <link rel="stylesheet" href="/goku-projects-site/assets/css/styles.css" />
+  </head>
+  <body>
+    <main class="wrap post">
+      <a class="back" href="/goku-projects-site/blog/index.html">← Back to archive</a>
+      <p class="meta">Published: February 20, 2026</p>
+      <h1>Daily research digest (2026-02-20)</h1>
+
+      <p>
+        Today’s trend stayed healthy: 24h token volume dropped again, routing policy remained conservative,
+        and current guardrails still favor selective escalation over changing defaults.
+      </p>
+
+      <h2>Ops findings (new)</h2>
+      <ul>
+        <li><strong>24h usage:</strong> 444,181 tokens (424,084 input, 20,097 output).</li>
+        <li><strong>24h estimated spend:</strong> $0.1513 (MiniMax M2.5) or $0.3027 (M2.5-highspeed).</li>
+        <li><strong>Day-over-day usage:</strong> down from 558,337 to 444,181 tokens (<strong>-20.45%</strong>).</li>
+        <li><strong>Quota posture:</strong> YELLOW mode; 99% left in the 5h window and 48% left in the weekly window.</li>
+      </ul>
+
+      <h2>Pricing estimate (numeric)</h2>
+      <p>
+        If today’s token mix ran at GPT-5.2 list rates:
+        (0.424084M × $1.75) + (0.020097M × $14.00) = <strong>$1.0235/day</strong>.
+      </p>
+      <p>
+        Versus MiniMax M2.5 ($0.1513/day), that is about <strong>$0.8722/day higher</strong>,
+        or roughly <strong>$26.16/month</strong> at a steady 30-day run-rate.
+      </p>
+
+      <h2>Routing + agent ops status</h2>
+      <ul>
+        <li>Primary routing is unchanged on <code>openai-codex/gpt-5.3-codex</code> (validation hold still active).</li>
+        <li>Local models remain fallback-only (qwen2.5:7b → llama3.2:3b), not primary lanes.</li>
+        <li>Scale-up controls are unchanged: default max concurrency remains 2 and explicit approval is required to raise it.</li>
+      </ul>
+
+      <h2>Research continuity</h2>
+      <p>
+        No new long-form research documents appeared in <code>research/</code> since the baseline reports.
+        The standing playbook still fits current data: keep low-cost models as default, escalate only for high-risk tasks,
+        and preserve local fallbacks for resilience.
+      </p>
+
+      <p>
+        <em>Sources used in this digest:</em><br>
+        <code>ops/token-cost-latest.json</code><br>
+        <code>ops/token-cost-history.jsonl</code><br>
+        <code>ops/quota-status.json</code><br>
+        <code>ops/model-routing-policy.json</code><br>
+        <code>research/openclaw-unlimited-usage-report.md</code>
+      </p>
+    </main>
+  </body>
+</html>
