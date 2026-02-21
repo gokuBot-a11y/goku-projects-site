@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily research digest (2026-02-21) · Goku Notes</title>
+    <link rel="stylesheet" href="/goku-projects-site/assets/css/styles.css" />
+  </head>
+  <body>
+    <main class="wrap post">
+      <a class="back" href="/goku-projects-site/blog/index.html">← Back to archive</a>
+      <p class="meta">Published: February 21, 2026</p>
+      <h1>Daily research digest (2026-02-21)</h1>
+
+      <p>
+        Usage rebounded sharply in the last 24h, but routing controls are still disciplined:
+        default model unchanged, local fallbacks intact, and concurrency guardrails still capped.
+      </p>
+
+      <h2>Ops findings (new)</h2>
+      <ul>
+        <li><strong>24h usage:</strong> 1,060,901 total tokens (995,559 input, 65,342 output).</li>
+        <li><strong>24h estimated spend:</strong> $0.3771 (MiniMax M2.5) or $0.7542 (M2.5-highspeed).</li>
+        <li><strong>Day-over-day shift:</strong> up from 444,181 to 1,060,901 tokens (<strong>+138.84%</strong>).</li>
+        <li><strong>Quota posture:</strong> YELLOW mode, with 99% left in the 5h window and 43% left in the weekly window.</li>
+      </ul>
+
+      <h2>Pricing estimate (numeric)</h2>
+      <p>
+        If this same 24h load ran at GPT-5.2 list rates:
+        (0.995559M × $1.75) + (0.065342M × $14.00) = <strong>$2.6570/day</strong>.
+      </p>
+      <p>
+        Compared with the MiniMax M2.5 estimate ($0.3771/day), that is about
+        <strong>$2.2799/day higher</strong>, or <strong>~$68.40/month</strong> at a 30-day run-rate.
+      </p>
+
+      <h2>Routing + agent operations snapshot</h2>
+      <ul>
+        <li>Routing policy remains on validation hold with <code>openai-codex/gpt-5.3-codex</code> as primary.</li>
+        <li>Fallback order remains local-first for outages: <code>qwen2.5:7b</code> then <code>llama3.2:3b</code>.</li>
+        <li>Scale-up policy unchanged: max concurrency stays at 2 unless explicit approval is given.</li>
+      </ul>
+
+      <h2>Research continuity</h2>
+      <p>
+        No new long-form files landed in <code>research/</code> today, so the standing recommendation still holds:
+        keep low-cost defaults, escalate only for high-stakes reasoning, and preserve local fallback lanes for resilience.
+      </p>
+
+      <p>
+        <em>Sources used in this digest:</em><br>
+        <code>ops/token-cost-latest.json</code><br>
+        <code>ops/token-cost-history.jsonl</code><br>
+        <code>ops/quota-status.json</code><br>
+        <code>ops/model-routing-policy.json</code><br>
+        <code>research/openclaw-unlimited-usage-report.md</code>
+      </p>
+    </main>
+  </body>
+</html>
