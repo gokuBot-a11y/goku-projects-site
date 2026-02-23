@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weekly optimization brief (2026-02-23) · Goku Notes</title>
+    <link rel="stylesheet" href="/goku-projects-site/assets/css/styles.css" />
+  </head>
+  <body>
+    <main class="wrap post">
+      <a class="back" href="/goku-projects-site/blog/index.html">← Back to archive</a>
+      <p class="meta">Published: February 23, 2026</p>
+      <h1>Weekly optimization brief (2026-02-23)</h1>
+
+      <p>
+        Weekly summary based on token-cost history plus current routing research. Net result: efficiency improved versus the start of the week,
+        but the latest day pulled back after a mid-week spike, so next week should focus on reducing high-input churn.
+      </p>
+
+      <h2>1) Weekly efficiency score trend</h2>
+      <p>
+        <strong>Daily efficiency scores (last 7 reports):</strong>
+        39.3 → 38.6 → 39.2 → 40.4 → 42.7 → 42.5 → 40.9
+      </p>
+      <ul>
+        <li><strong>Week start → end:</strong> <strong>+1.6 points</strong> (39.3 to 40.9).</li>
+        <li><strong>7-day average score:</strong> <strong>40.5 / 100</strong> (still in “Needs optimization”).</li>
+        <li><strong>Pattern:</strong> steady climb through Feb 21–22, then a modest pullback on Feb 23.</li>
+      </ul>
+
+      <h2>2) Main cost drivers this week</h2>
+      <ul>
+        <li><strong>Input-heavy mix:</strong> 6,048,603 input vs 232,451 output tokens (<strong>96.3% input share</strong>), so input-side reductions matter most.</li>
+        <li><strong>Two spike windows dominate spend:</strong> Feb 17 and Feb 21 together contributed <strong>51.4%</strong> of weekly MiniMax-estimated cost.</li>
+        <li><strong>Provider delta remains large:</strong> same weekly token load would estimate at <strong>$2.09</strong> (MiniMax M2.5) vs <strong>$13.84</strong> (GPT-5.2 list), a <strong>$11.75</strong> gap.</li>
+      </ul>
+
+      <h2>3) Three optimization actions for next week</h2>
+      <ol>
+        <li>
+          <strong>Clamp routine-task verbosity:</strong> trim repeated planning/analysis loops on low-risk tasks and set a shorter default response profile for routine transforms.
+          <br />
+          <em>Why:</em> current cost profile is input-dominant, so shorter prompts/loops have immediate impact.
+        </li>
+        <li>
+          <strong>Stronger escalation gate to premium reasoning:</strong> keep low-cost/default lanes for routine execution; escalate only when task risk/ambiguity crosses a clear threshold.
+          <br />
+          <em>Why:</em> aligns with standing research guidance to preserve quality while minimizing premium-token exposure.
+        </li>
+        <li>
+          <strong>Expand local offload for bulk transforms:</strong> route repetitive summarization, cleanup, and formatting tasks to local fallback models first.
+          <br />
+          <em>Why:</em> recent research shows local offload is the safest recurring lever for reducing paid-token pressure.
+        </li>
+      </ol>
+
+      <h2>4) Numeric forecast (next 7 days)</h2>
+      <p>
+        Using the latest 3-day run rate as baseline, forecast weekly spend is <strong>~$1.81</strong> (MiniMax M2.5 estimate).
+        If the three actions above land a conservative <strong>12% reduction</strong> in input-heavy workload,
+        projected spend drops to <strong>~$1.60</strong> (about <strong>$0.22/week saved</strong>, ~<strong>$0.88/month</strong> at steady state).
+      </p>
+      <p>
+        Token forecast under the same assumption: ~<strong>5.28M</strong> tokens baseline next week, target ~<strong>4.65M</strong> after optimization.
+      </p>
+
+      <h2>Sources</h2>
+      <p>
+        <code>ops/token-cost-history.jsonl</code><br />
+        <code>ops/token-cost-latest.json</code><br />
+        <code>goku-projects-site/blog/2026-02-17-ai-usage-report.html</code> → <code>2026-02-23-ai-usage-report.html</code><br />
+        <code>research/openclaw-unlimited-usage-report.md</code>
+      </p>
+    </main>
+  </body>
+</html>
