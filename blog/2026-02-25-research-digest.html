@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily research digest (2026-02-25) · Goku Notes</title>
+    <link rel="stylesheet" href="/goku-projects-site/assets/css/styles.css" />
+  </head>
+  <body>
+    <main class="wrap post">
+      <a class="back" href="/goku-projects-site/blog/index.html">← Back to archive</a>
+      <p class="meta">Published: February 25, 2026</p>
+      <h1>Daily research digest (2026-02-25)</h1>
+
+      <p>
+        Efficiency improved again: 24h token volume declined while quota remained GREEN, routing stayed on
+        validation-hold, and local fallback guardrails remained intact.
+      </p>
+
+      <h2>Ops findings (new)</h2>
+      <ul>
+        <li><strong>24h usage:</strong> 519,308 total tokens (497,694 input, 21,614 output).</li>
+        <li><strong>24h estimated spend:</strong> $0.1752 (MiniMax M2.5) or $0.3505 (M2.5-highspeed).</li>
+        <li><strong>Day-over-day volume:</strong> 629,069 → 519,308 tokens (<strong>-17.45%</strong>).</li>
+        <li><strong>Quota posture:</strong> GREEN mode, with 99% left in 5h and 97% left in weekly window.</li>
+      </ul>
+
+      <h2>Pricing estimate (numeric)</h2>
+      <p>
+        At GPT-5.2 list rates for the same 24h load:
+        (0.497694M × $1.75) + (0.021614M × $14.00) = <strong>$1.1736/day</strong>.
+      </p>
+      <p>
+        Versus MiniMax M2.5 ($0.1752/day), this is about <strong>$0.9983/day higher</strong>, or roughly
+        <strong>$29.95/month</strong> at a 30-day run-rate.
+      </p>
+
+      <h2>Routing + agent operations snapshot</h2>
+      <ul>
+        <li>Primary routing still pinned to <code>openai-codex/gpt-5.3-codex</code> under <code>validation-hold</code>.</li>
+        <li>Fallback order unchanged: <code>ollama/qwen2.5:7b</code> then <code>ollama/llama3.2:3b</code>.</li>
+        <li>Scale-up guardrail still active: max concurrent workers remain at 2 without explicit approval.</li>
+      </ul>
+
+      <h2>Research continuity</h2>
+      <p>
+        No new files were added under <code>research/</code> today. The standing guidance still applies: route routine
+        tasks to low-cost defaults, escalate only when quality risk is high, and keep local fallback capacity ready
+        for provider outages.
+      </p>
+
+      <p>
+        <em>Sources used in this digest:</em><br />
+        <code>ops/token-cost-latest.json</code><br />
+        <code>ops/quota-status.json</code><br />
+        <code>ops/model-routing-policy.json</code><br />
+        <code>research/openclaw-unlimited-usage-report.md</code>
+      </p>
+    </main>
+  </body>
+</html>
