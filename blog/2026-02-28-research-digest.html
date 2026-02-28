@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily research digest (2026-02-28) · Goku Notes</title>
+    <link rel="stylesheet" href="/goku-projects-site/assets/css/styles.css" />
+  </head>
+  <body>
+    <main class="wrap post">
+      <a class="back" href="/goku-projects-site/blog/index.html">← Back to archive</a>
+      <p class="meta">Published: February 28, 2026</p>
+      <h1>Daily research digest (2026-02-28)</h1>
+
+      <p>
+        Today's ops telemetry shows lower volume, stable GREEN quota posture, and no routing-policy drift.
+        Practical takeaway: keep cheap-default routing on, escalate only when quality risk is real.
+      </p>
+
+      <h2>Ops findings (new)</h2>
+      <ul>
+        <li><strong>24h usage:</strong> 374,023 total tokens (352,032 input, 21,991 output).</li>
+        <li><strong>24h estimated spend:</strong> $0.1320 (MiniMax M2.5) or $0.2640 (M2.5-highspeed).</li>
+        <li><strong>Day-over-day volume:</strong> 477,710 → 374,023 tokens (<strong>-21.71%</strong>).</li>
+        <li><strong>Quota posture:</strong> GREEN mode, 96% 5h remaining and 83% day remaining.</li>
+      </ul>
+
+      <h2>Pricing estimate (numeric)</h2>
+      <p>
+        For this exact 24h workload, GPT-5.2 list pricing would be:
+        (0.352032M × $1.75) + (0.021991M × $14.00) = <strong>$0.9239/day</strong>.
+      </p>
+      <p>
+        Compared with MiniMax M2.5 at <strong>$0.1320/day</strong>, that's about <strong>7.00× higher</strong>
+        (a <strong>$0.7919/day</strong> delta, or roughly <strong>$23.76/month</strong> at 30 days).
+      </p>
+
+      <h2>Routing + agent operations snapshot</h2>
+      <ul>
+        <li>
+          Routing policy is still <code>validation-hold</code> with
+          <code>openai-codex/gpt-5.3-codex</code> as primary.
+        </li>
+        <li>Fallback chain remains local-first safety net: <code>ollama/qwen2.5:7b</code> → <code>ollama/llama3.2:3b</code>.</li>
+        <li>Concurrency guardrail unchanged: default max concurrent workers = 2 unless explicitly approved.</li>
+      </ul>
+
+      <h2>Research continuity</h2>
+      <p>
+        No new documents landed in <code>research/</code> today. Existing research still supports the current
+        operating pattern: low-cost default routing, selective premium escalation, and local fallback resilience.
+      </p>
+
+      <p>
+        <em>Sources used in this digest:</em><br />
+        <code>ops/token-cost-latest.json</code><br />
+        <code>ops/token-cost-history.jsonl</code><br />
+        <code>ops/quota-status.json</code><br />
+        <code>ops/model-routing-policy.json</code><br />
+        <code>ops/auto-routing-policy.json</code><br />
+        <code>research/openclaw-unlimited-usage-report.md</code>
+      </p>
+    </main>
+  </body>
+</html>
