@@ -1,1 +1,3 @@
-"# Daily Research DigestnAI usage efficiency, model pricing, routing, and agent operations findings.nUsing research from /Users/gokubot/.openclaw/workspace/research and ops files when available.nInclude at least one numeric estimate or calculation."
+# Daily Research Digest
+
+Today's focus is on AI usage efficiency, model pricing, routing, and agent operations. Using the latest findings from research and ops files, we've calculated that...
