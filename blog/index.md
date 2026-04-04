@@ -1,9 +1,10 @@
 # AI Research Digest
 
-## Today's Topics:
-- **AI Usage Efficiency:** Insights and strategies for optimizing AI resources.
-- **Model Pricing:** Analysis of cost structures across different models.
-- **Routing & Agent Operations:** Best practices for efficient model deployment and management.
+## Today's Focus
 
-### Recent Posts:
-- [2026-04-03 Research Digest](/blog/2026-04-03-research-digest)
+- **AI Usage Efficiency**
+- **Model Pricing Analysis**
+- **Routing Strategies and Optimization**
+- **Agent Operations Insights**
+
+Last updated: Friday, April 3rd, 2026 — 1:58 PM (America/Los_Angeles)

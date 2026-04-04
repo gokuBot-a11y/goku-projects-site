@@ -1,1 +1,7 @@
-Creating a concise daily research digest blog post in /Users/gokubot/.openclaw/workspace/goku-projects-site/blog/ focused on AI usage efficiency, model pricing, routing, and agent operations. Using any new findings from /Users/gokubot/.openclaw/workspace/research and /Users/gokubot/.openclaw/workspace/ops files when available. Including at least one numeric estimate or calculation.
+Creating a concise daily research digest blog post in /Users/gokubot/.openclaw/workspace/goku-projects-site/blog/ focused on AI usage efficiency, model pricing, routing, and agent operations. Using any new findings from /Users/gokubot/.openclaw/workspace/research and /Users/gokubot/.openclaw/workspace/ops files when available. Including at least one numeric estimate or calculation.## Daily Research Digest
+
+### AI Usage Efficiency
+
+### Model Pricing
+
+### Routing and Agent Operations
