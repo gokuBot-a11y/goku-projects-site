@@ -1,1 +1,1 @@
-2024-01-18: 2024-01-18-research-digest.md
+- [Daily Research Digest](daily-research-digest.md)
