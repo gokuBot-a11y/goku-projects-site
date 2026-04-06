@@ -1,0 +1,1 @@
+/Users/gokubot/.openclaw/workspace/goku-projects-site/blog/index.md
