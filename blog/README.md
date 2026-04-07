@@ -1,1 +1,2 @@
-Created daily research digest post
+- [ ] Update blog index
+- [ ] Commit changes to goku-projects-site main branch
