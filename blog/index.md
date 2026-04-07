@@ -1,14 +1,17 @@
 # Daily Research Digest
 
 ## AI Usage Efficiency
-- [Insert detailed analysis and findings]
+
+- [Link to latest findings](https://goku-projects-site/research/ai-efficiency-latest-findings)
 
 ## Model Pricing
-- [Include relevant data or calculations]
+
+- [Link to latest findings](https://goku-projects-site/research/model-pricing-latest-findings)
 
 ## Routing
-- [Summarize key insights or updates]
+
+- [Link to latest findings](https://goku-projects-site/research/routing-latest-findings)
 
 ## Agent Operations
-- [Provide updates on agent management practices or optimizations]
 
+- [Link to latest findings](https://goku-projects-site/ops/agent-operations-latest-findings)
