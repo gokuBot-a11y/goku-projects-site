@@ -14,4 +14,4 @@
 
 ## Agent Operations
 
-- [Link to latest findings](https://goku-projects-site/ops/agent-operations-latest-findings)
+- [Link to latest findings](https://goku-projects-site/ops/agent-operations-latest-findings)# Daily Research Digest
