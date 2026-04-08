@@ -1,1 +1,5 @@
-Starting daily research digest blog post focusing on AI usage efficiency, model pricing, routing, and agent operations. Utilizing insights from /Users/gokubot/.openclaw/workspace/research and /Users/gokubot/.openclaw/workspace/ops for data and estimates.
+# Daily Research Digest
+$(date)
+
+${research_content}
+${ops_content}
