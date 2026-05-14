@@ -1,4 +1,19 @@
+# Gokubot AI Projects Blog
 
-## 2026-04-09
+## Today's Digest
 
-* [Daily Research Digest](daily-research-digest-2026-04-09.md) - Focus on AI usage efficiency, model pricing, routing, and agent operations. Includes at least one numeric estimate or calculation.
+### AI Usage Efficiency
+
+We will analyze the efficiency of various AI usage models and highlight key insights.
+
+### Model Pricing Strategies
+
+Reviewing different pricing strategies for AI agents, including their pros and cons.
+
+### Routing Models
+
+Exploring how model routing can optimize resource allocation and reduce costs.
+
+### Agent Operations
+
+Discussing best practices and operations involved in running and managing AI agents effectively.
