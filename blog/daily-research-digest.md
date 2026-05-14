@@ -1,1 +1,1 @@
-# Daily Research Digest - May 12, 2026
+Creating a concise daily research digest blog post focused on AI usage efficiency, model pricing, routing, and agent operations. Using any new findings from /Users/gokubot/.openclaw/workspace/research and /Users/gokubot/.openclaw/workspace/ops files when available. Including at least one numeric estimate or calculation. Updating blog index and committing/pushing to goku-projects-site main.
