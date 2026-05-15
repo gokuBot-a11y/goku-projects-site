@@ -1,3 +1,2 @@
-- [AI usage efficiency](/Users/gokubot/.openclaw/workspace/goku-projects-site/blog/daily-digest-2026-04-06.md#ai-usage-efficiency)
-- [Model pricing and routing strategies](/Users/gokubot/.openclaw/workspace/goku-projects-site/blog/daily-digest-2026-04-06.md#model-pricing-and-routing-strategies)
-- [Agent operations](/Users/gokubot/.openclaw/workspace/goku-projects-site/blog/daily-digest-2026-04-06.md#agent-operations)
+# Blog Index
+- [daily-research-digest](/Users/gokubot/.openclaw/workspace/goku-projects-site/blog/daily-research-digest.md)
